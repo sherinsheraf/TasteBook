@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "933523937444",
+    "project_id": "tastebook-527f6",
+    "storage_bucket": "tastebook-527f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933523937444:android:96c11cdfc4cd5b20b12e31",
+        "android_client_info": {
+          "package_name": "com.example.tastebook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsJPz3AQ86h736FqDZ3P445NZTXl1_gpQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
