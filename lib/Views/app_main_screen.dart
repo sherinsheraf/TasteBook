@@ -1,9 +1,10 @@
-
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
+import 'package:iconsax/iconsax.dart';
 import 'package:tastebook/Utils/constants.dart';
+import 'package:tastebook/Views/favourites.dart';
 import 'package:tastebook/Views/home_screen.dart';
+import 'package:tastebook/Views/setting.dart';
 
 class AppMainScreen extends StatefulWidget {
   const AppMainScreen({super.key});
@@ -18,10 +19,10 @@ class _AppMainScreenState extends State<AppMainScreen> {
   @override
   void initState() {
     page = [ 
-    const  HomeScreen(),
-    navBarPage(Iconsax.heart5),
-      navBarPage(Iconsax.calendar5),
-      navBarPage(Iconsax.setting_21),
+    const  MyAppHomeScreen(),
+     const FavoriteScreen(),
+      SettingsPage(),
+     
     ];
 
     super.initState();
@@ -65,15 +66,10 @@ class _AppMainScreenState extends State<AppMainScreen> {
             ),
             label: "Favorite",
           ),
+          
           BottomNavigationBarItem(
             icon: Icon(
-              selectedIndex == 2 ? Iconsax.calendar5 : Iconsax.calendar,
-            ),
-            label: "Meal Plan",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              selectedIndex == 3 ? Iconsax.setting_21 : Iconsax.setting_2,
+              selectedIndex == 2 ? Iconsax.setting_21 : Iconsax.setting_2, // Change index to 2
             ),
             label: "Setting",
           ),
